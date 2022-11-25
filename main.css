@@ -1,0 +1,138 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: dimgrey;
+    padding: 30px 0;
+    font-size: 2em;
+    display: flex;
+}
+
+.container1{
+    max-width: 95%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container2{
+    display: flex;
+}
+
+.container2 img{
+    max-width: 25px;
+    width: auto;
+    border: 1px solid black;
+    padding: 2px;
+    display: none;
+}
+
+main{
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1.2%;
+}
+
+main > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: dimgray;
+    margin-top: 20px;
+    max-width: 32%;
+}
+
+section > p{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5px;
+    font-size: 0.9em;   
+}
+
+.end-section{
+    display: none;
+}
+
+section > div{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 425px){
+
+    header{
+        padding: 20px 0;
+    }
+
+    .container1{
+        max-width: 88%;
+        width: 100%;
+        margin-left: 2.5%;
+        margin-right: none;
+    }
+
+    .container2{
+        max-width: 7%;
+        margin-right: 2.5%;
+    }
+
+    .container2 img{
+        max-width: 100%;
+        width: auto;
+        border: 1px solid black;
+        padding: 2px;
+        display: flex;
+    }
+
+    main > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    section{
+        max-width: 100%;
+    }
+
+    
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+    main > div{
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom: 3%;
+    }
+
+    section{
+        max-width: 49%;
+        width: 100%;
+    }
+
+    .last{
+        max-width: 100%;
+    }
+
+
+}
